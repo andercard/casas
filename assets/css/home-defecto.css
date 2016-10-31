@@ -1,0 +1,221 @@
+.contenedor-defecto {
+	position: relative;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Common style */
+.contenedor-defecto figure {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.contenedor-defecto figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+
+.contenedor-defecto figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.contenedor-defecto figure figcaption::before,
+.contenedor-defecto figure figcaption::after {
+	pointer-events: none;
+}
+
+.contenedor-defecto figure figcaption,
+.contenedor-defecto figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(2,2,2,.4);
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.contenedor-defecto figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+
+/* Individual effects */
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+figure.effect-julia {
+	background: #323232;
+}
+
+figure.effect-julia img {
+	width: 100%;
+	-webkit-transition: opacity 3.5s, -webkit-transform 3.5s;
+	transition: opacity 3.5s, transform 3.5s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	text-align: left;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 100vh;
+}
+
+figure.effect-julia figcaption .julia-logo-elena  {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+
+figure.effect-julia figcaption .julia-logo-elena span {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+
+figure.effect-julia figcaption .julia-logo-elena span:first-child {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+figure.effect-julia figcaption .julia-logo-elena span:first-child img {
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;	
+	width: auto;
+}
+figure.effect-julia figcaption .julia-entrar { 
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 20vh;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+figure.effect-julia figcaption .julia-entrar i { 
+	font-size: 72px;
+	position: relative;
+	  -webkit-animation: pulsar 1s infinite alternate;
+          animation: pulsar 1s infinite alternate;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	color: #fff;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 20px;
+	-webkit-transition: opacity .5s, -webkit-transform .5s;
+	transition: opacity .5s, transform .5s;
+	-webkit-transform: translate3d(0,360px,0);
+	transform: translate3d(0,360px,0);
+}
+
+
+figure.effect-julia:hover img {
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.contenedor-defecto figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes pulsar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 15px;
+  }
+}
+@keyframes pulsar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 15px;
+  }
+}

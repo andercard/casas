@@ -1,0 +1,47 @@
+a.header-defecto
+    display flex
+    flex-direction column
+    min-height 100vh
+    transition all 2s
+    background-image url(../img/c&h_image_bg-home.jpg)
+    background-size cover
+    position relative
+    z-index 1
+    background-attachment fixed
+    
+    &:hover
+        transform scale(1.2)
+    
+    .header-defecto-logo
+        display flex
+        flex 1
+        margin-left 20%
+        align-items center
+        
+    .home-defecto-flecha
+        height 15vh
+        width 100%
+        
+        > a
+            margin 0 auto
+            width 46px
+            line-height 0
+            font-size 75px
+            color #c7c2bb
+            display block
+            position relative
+            top 0
+            left 0
+            animation pulsar 1s infinite alternate
+            
+@keyframes {pulsar}    
+    0%
+        top 0
+        
+    100%
+        top 15px
+		
+.over-hiden
+	overflow hidden
+        
+            

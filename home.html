@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="agencia tesla digital">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,900' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
+<!--    scroll minimal -->
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+<!--  fondo animado  -->
+   <link rel="stylesheet" href="assets/css/vegas.css">
+<!--   animaciones -->
+   <link rel="stylesheet" href="assets/css/animate.min.css">
+   
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+    
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/global.css" type="text/css">
+
+    <title>Elena de las Casas</title>
+
+</head>
+
+<body>
+
+<!-- buscardor -->
+  <div id="slider2" class="search">
+    <div class="search__cerrar-lupa">
+      <i class="fa fa-search"></i>
+      <i id="cerrar" class="fa fa-times"></i>
+    </div>
+    <div class="search__contenedor-filtro">
+      <div class="search__titulo-filtro">
+        <p>
+          encuentra <br>
+          <strong>
+            tu hogar
+          </strong>
+        </p>
+      </div>
+      <div class="search__filtro">
+<!--       filtro -->
+
+     <!-- NOTA: Emiliano el template tiene una forma de leer lo que se eligio en el filtro cuando mires esto me avisas si necesita el template y please eliminar este comentario despues :)  -->
+      <form  class="formulario-search" action="">
+            <div class="form-group">
+               <p>PAIS:</p>
+                <select name="pais">
+                    <option value="">TODOS</option>
+                    <option value="1">COLOMBIA</option>
+
+                </select>
+            </div><!-- /.form-group -->
+            <div class="form-group">
+               <p>CIUDAD:</p>
+                <select name="ciudad">
+                    <option value="">TODAS</option>
+                    <option value="1">BUCARAMANGA</option>
+                    <option value="2">FLORIDABLANCA</option>
+
+                </select>
+            </div><!-- /.form-group -->
+            <div class="form-group">
+               <p>TIPO:</p>
+                <select name="tipo">
+                    <option value="">TODOS</option>
+                    <option value="1">CASA</option>
+                    <option value="2">APTO</option>
+                    <option value="3">LOTE</option>
+                    <option value="4">BODEGA</option>
+
+                </select>
+            </div><!-- /.form-group -->
+            <div class="form-group">
+               <p>ESTATUS:</p>
+                <select name="estatus">
+                    <option value="">TODOS</option>
+                    <option value="1">EN RENTA</option>
+                    <option value="2">EN VENTA</option>
+
+                </select>
+            </div><!-- /.form-group -->
+
+            <div class="form-group">
+                <div  id="mostrar-resultado" class="btn btn-default btn-filtro">
+                  BUSCAR
+                </div>
+            </div><!-- /.form-group -->
+        </form><!-- /#form-map -->
+
+<!--     /*  filtro -->
+      </div>
+    </div>
+  </div>
+
+<!--  /* fin de sidebar buscador -->
+
+<!--resultado de busqueda -->
+
+<div class="resultado">
+<!-- menu de resultado -->
+  <div class="resultado__menu">
+
+  </div>
+
+<!--  resultado de la busqueda -->
+  <div class="resultado__contenido-busqueda">
+
+     <!-- box resultado -->
+    <div class="resultado__busqueda">
+    <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="descripcion-inmueble/inmueble.html">View more</a>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_008.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="descripcion-inmueble/inmueble.html">View more</a>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_010.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_010.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="descripcion-inmueble/inmueble.html">View more</a>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_010.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+
+        <figure class="effect-oscar">
+            <img src="assets/img/search/c&h_image_010.jpg" alt="img10"/>
+            <figcaption>
+
+                <div class="resultado__busqueda--text-info">
+                  <p>En <strong>Venta</strong> <br>
+                    Bucaramanga, Co  <br>
+                  </p>
+                  <p> Ver detalles</p>
+                </div>
+                <a href="descripcion-inmueble/inmueble.html">View more</a>
+            </figcaption>
+        </figure>
+    </div>
+
+<!--     fin resultado de busqueda -->
+
+    <div class="resultado__sidebar">
+
+    </div>
+  </div>
+
+</div>
+
+<!-- /* resultado de busqueda -->
+
+<!-- section 1 -->
+
+<!-- home buscardor -->
+    <div class="home-search">
+      <div class="home-search__contenedor">
+        <div class="home-search__menu">
+          <div class="home-search__logo-buscar">
+<!--        logo por defecto   -->
+            <a class="home-search__menu-logo home--search__logo-defecto">
+              <img src="assets/img/elenadelascasas_logo_02.png" alt="logo principal elena de las casas">
+            </a>
+<!--         logo al bajar el scroll   -->
+            <a class="home-search__menu-logo home--search__logo-scroll">
+              <img src="assets/img/elenadelascasas_logo_03.png" alt="logo principal elena de las casas">
+            </a>
+            <nav>
+              <a href="#">destacados</a>
+              <a href="#">mapa</a>
+              <a href="#">avalúos</a>
+              <a href="#">seguros</a>
+              <a href="#">contacto</a>
+            </nav>
+          </div>
+          
+          <div class="home-search__menu-buscar">
+
+              <i id="abrir" class="fa fa-search"></i>
+
+          </div>
+          
+        </div>
+        
+        <div class="home-search__buscar">
+          <div class="home-search__buscar-contenedor">
+           <p>
+             NO SOLO ES TU PROPIEDAD, ES TU HOGAR; <br> ENCUENTRA TU HOGAR.
+           </p>
+            <div id="trigger" class="home-search__buscar-btn">
+              <i class="fa fa-search"></i> <p>buscar</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+<!-- */ home buscardor -->
+
+<!-- footer fijo-->
+<div class="footer-fijo">
+    <div class="logo-footer">
+        <img src="assets/img/c&h-inmobiliaria_logo_01.png" alt="">
+    </div>
+    <div class="copyright-redes">
+      <div class="footer-fijo__redes">
+        <p> +57 3113621270 </p> 
+        <p>info@elenadelascasas.com</p>
+        <ul>
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>     
+      <div class="copyright-footer">
+          <p>© 2015 C&H_Inmobiliaria, All rights reserved </p>
+          <p>Developed by</p>
+      </div>
+    </div>
+</div>
+
+<!-- */ footer fijo-->
+
+<!-- destacados -->
+<div class="resultado-destacados__titulo">
+   <div class="resultado-destacados__titulo-conten">
+     <h2>
+       VENTAS DE INMUEBLES <br>
+       <strong>
+         DESTACADOS
+       </strong>
+     </h2>
+   </div>
+</div>
+
+
+<div class="resultado-destacados__contenedor">
+
+    <div id="owl-destacado" class="owl-carousel">
+      <div class="item">
+<!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_008.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+
+      </div>
+
+      <div class="item">
+     <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_010.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_011.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+      </div>
+
+      <div class="item">
+
+<!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_014.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_015.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+
+      </div>
+
+      <div class="item">
+
+       <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_017.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+      </div>
+
+      <div class="item">
+
+       <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+      </div>
+      <div class="item">
+
+       <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+      </div>
+
+      <div class="item">
+
+       <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+      </div>
+
+      <div class="item">
+
+       <!--              box container destacados-->
+        <div class="resultado-destacados">
+          <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <!-- division box -->
+              <figure class="effect-destacados">
+                  <img src="assets/img/search/c&h_image_006.jpg" alt="img10"/>
+                  <figcaption>
+
+                      <div class="resultado-destacados__text-titulo">
+                        <h3>
+                          INMUEBLE/CASA BOLD <br>
+                          <span>
+                            $70,000 USD
+                          </span>
+                        </h3>
+                        <div class="resultado-destacados__text-info">
+                          <div class="resultado-destacados__text-info1">
+                            <p>4 DORMITORIOS</p>
+                          </div>
+                          <div class="resultado-destacados__text-info2">
+                            <p>3 BAÑOS</p>
+                          </div>
+                        </div>
+                        <p class="resultado-destacados__btn"> Ver detalles</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+
+          </div>
+      <!--       fin cotenedor box container        -->
+
+      </div>
+    </div>
+
+</div>
+
+<!-- /* fin destacados -->
+
+<!-- footer enviar email -->
+<div class="footer-email">
+  <div class="footer-email__info">
+   <p>
+     SI REQUIERES MÁS INFORMACIÓN <br>
+     SOBRE ALGUNO DE NUESTROS INMUEBLES
+   </p>
+   
+   <a id="enviar-mail" href="#modal-02" class="btn-slide">enviame un email</a>
+    
+  </div>
+</div>
+<!-- fin enviar email -->
+
+<!--modal enviar email-->
+
+<div id="modal-02" class="modal-email__contenedor">
+<!-- logo y boton cerrar -->
+    <div class="modal-email__logo-cerrar">
+      <a href="">
+        <img src="assets/img/elenadelascasas_logo_02.png" alt="logo elena de las casas enviar email">
+      </a>
+      <div  id="btn-close-modal" class="close-modal-02"> 
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+    
+<!--    formulario de envio -->
+    <div class="modal-email__info-formu">
+          <form class="modal-email__formulario">
+          
+          <!--       bloque de formulario nombre email y asunto  -->
+           <div class="modal-email__formu-name">         
+            <!--         box nombre -->
+             <span class="input input--manami">
+                <input class="input__field input__field--manami" type="text" id="input-32" />
+                <label class="input__label input__label--manami" for="input-32">
+                    <span class="input__label-content input__label-content--manami">Username</span>
+                </label>
+              </span>
+          
+            <!--          box email -->
+             <span class="input input--manami">
+                <input class="input__field input__field--manami" type="text" id="input-32" />
+                <label class="input__label input__label--manami" for="input-32">
+                    <span class="input__label-content input__label-content--manami">Username</span>
+                </label>
+              </span>
+          
+            <!--        box asunto  -->
+          
+             <span class="input input--manami">
+                <input class="input__field input__field--manami" type="text" id="input-32" />
+                <label class="input__label input__label--manami" for="input-32">
+                    <span class="input__label-content input__label-content--manami">Username</span>
+                </label>
+              </span>
+              </div>
+          <!--            mensaje formulario -->
+             <div class="modal-email__formu-mensaje">
+               <h3>contactanos</h3>
+               <p>
+                 Siéntete libre de contactarnos, responderemos tu mail lo más pronto posible.
+               </p>
+               <textarea placeholder="Duda o mensaje"></textarea>
+               
+               <div class="btn-slide btn-email"> enviar </div>
+               
+             </div>
+                 
+          </form>
+    </div>
+    
+<!--    derechos de autor-->
+    <div class="modal-email__copyright">
+     
+      <div class="modal-email__logo-footer">
+        <img src="assets/img/c&h-inmobiliaria_logo_01.png" alt="">
+      </div>
+      
+      <div class="modal-email__tesla">
+        <p>
+          © 2015 C&H_Inmobiliaria, All rights reserved
+        </p>
+        <a href="#">
+        Developed by
+        </a>
+      </div>
+      
+    </div>
+    
+</div>
+
+<!-- fin modal enviar email-->
+
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/scrollReveal.min.js"></script>
+<script type="text/javascript" src="assets/js/jshashtable-2.1_src.js"></script>
+<script type="text/javascript" src="assets/js/jquery.numberformatter-1.2.3.js"></script>
+<script type="text/javascript" src="assets/js/tmpl.js"></script>
+<script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slider.js"></script>
+<!-- scroll minimal -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!--fondo animado-->
+<script src="assets/js/vegas.min.js"></script>
+<!-- sidebar buscador -->
+<script src="assets/js/slidereveal.js"></script>
+<!-- carrusel  destacados -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- modal envio d email -->
+<script src="assets/js/animatedModal.min.js"></script>
+
+<!-- activar focus de email -->
+<script src="assets/js/classie.js"></script>
+
+<script type="text/javascript" src="assets/js/custom-map.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!-- main elena  -->
+
+<script src="assets/js/main.js"></script>
+
+<script>
+  /// fondo home search
+    $(".home-search").vegas({
+        shuffle: true,
+        cover: 'cover',
+        transitionDuration: 3000,
+        timer: false,
+        overlay: true,
+        slides: [
+            { src: "assets/img/inmuebles/c&h_inmueble_001.jpg" },
+            { src: "assets/img/inmuebles/c&h_inmueble_002.jpg" }
+
+            ]
+    });
+  
+  
+		(function($){
+			$(window).load(function(){
+				
+				$("body").mCustomScrollbar({
+					snapAmount:40,
+					scrollButtons:{enable:true},
+					keyboard:{scrollAmount:40},
+					mouseWheel:{deltaFactor:40},
+					scrollInertia:400
+				});
+				
+			});
+		})(jQuery);
+	
+
+</script>
+    
+    
+
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+
+</body>
+</html>
